@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
+* {
+  font-family: 'Prompt', sans-serif;
+}
+#canvas {
+  max-width: 500px;
+  color: #07ffff;
+}
