@@ -5,220 +5,304 @@ canvas.crossOrigin = "Anonymous";
 canvas.height = $('img').height();
 ctx.drawImage($('img').get(0), 0, 0);
 ctx.font = "36pt Prompt";
-// $(document).on('input','#inp-pb7-3',function(){
-//     //redraw image
-//     ctx.clearRect(0,0,canvas.width,canvas.height);
-//     ctx.drawImage($('img').get(0), 0, 0);
-//     // //refill text
-//     // ctx.fillStyle = "#07ffff";
-//     if ( $(this).val().startsWith('-') ){
-//       ctx.fillStyle = "red";
-//     }
-//     else{
-//       ctx.fillStyle = "#07ffff";
-//     }
-//     // ctx.fillText($(this).val(),330,255);
-//     // PB7
-//     ctx.fillText(('33.33'),330,255);
-//     ctx.fillText(('33.33'),560,255);
-//     ctx.fillText(('-0.10'),810,255);
-//     // B7
-//     ctx.fillText(('33.33'),330,335);
-//     ctx.fillText(('33.33'),560,335);
-//     ctx.fillText(('-0.10'),810,335);
-//     // Diesel
-//     ctx.fillText(('33.33'),330,415);
-//     ctx.fillText(('33.33'),560,415);
-//     ctx.fillText(('-0.10'),810,415);
-//     // B20
-//     ctx.fillText(('33.33'),330,495);
-//     ctx.fillText(('33.33'),560,495);
-//     ctx.fillText(('-0.10'),810,495);
-//     // เบนซิน
-//     ctx.fillText(('33.33'),330,575);
-//     ctx.fillText(('33.33'),560,575);
-//     ctx.fillText(('-0.10'),810,575);
-//     // 95
-//     ctx.fillText(('33.33'),330,655);
-//     ctx.fillText(('33.33'),560,655);
-//     ctx.fillText(('-0.10'),810,655);
-//     // 91
-//     ctx.fillText(('33.33'),330,735);
-//     ctx.fillText(('33.33'),560,735);
-//     ctx.fillText(('-0.10'),810,735);
-//     // E20
-//     ctx.fillText(('33.33'),330,815);
-//     ctx.fillText(('33.33'),560,815);
-//     ctx.fillText(('-0.10'),810,815);
-//     // E85
-//     ctx.fillText(('33.33'),330,895);
-//     ctx.fillText(('33.33'),560,895);
-//     ctx.fillText(('-0.10'),810,895);
-// });
-$(document).on('input','#inp-pb7-3',function(){
-  //redraw image
-  // ctx.clearRect(0,0,canvas.width,canvas.height);
-  // ctx.drawImage($('img').get(0), 0, 0);
-  const toprice = document.getElementById('inp-pb7-1').value
-  const nextprice = document.getElementById('inp-pb7-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,255);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,255);
-  ctx.fillText(nextprice,560,255);
-  ctx.fillText($(this).val(),810,255);
-});
-$(document).on('input','#inp-b7-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-b7-1').value
-  const nextprice = document.getElementById('inp-b7-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,335);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,335);
-  ctx.fillText(nextprice,560,335);
-  ctx.fillText($(this).val(),810,335);
-});
-$(document).on('input','#inp-d-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-d-1').value
-  const nextprice = document.getElementById('inp-d-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,415);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,415);
-  ctx.fillText(nextprice,560,415);
-  ctx.fillText($(this).val(),810,415);
-});
-$(document).on('input','#inp-b20-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-b20-1').value
-  const nextprice = document.getElementById('inp-b20-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,495);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,495);
-  ctx.fillText(nextprice,560,495);
-  ctx.fillText($(this).val(),810,495);
-});
-$(document).on('input','#inp-ben-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-ben-1').value
-  const nextprice = document.getElementById('inp-ben-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,575);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,575);
-  ctx.fillText(nextprice,560,575);
-  ctx.fillText($(this).val(),810,575);
-});
-$(document).on('input','#inp-95-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-95-1').value
-  const nextprice = document.getElementById('inp-95-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,655);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,655);
-  ctx.fillText(nextprice,560,655);
-  ctx.fillText($(this).val(),810,655);
-});
-$(document).on('input','#inp-91-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-91-1').value
-  const nextprice = document.getElementById('inp-91-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,735);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,735);
-  ctx.fillText(nextprice,560,735);
-  ctx.fillText($(this).val(),810,735);
-});
-$(document).on('input','#inp-e20-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-e20-1').value
-  const nextprice = document.getElementById('inp-e20-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,815);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,815);
-  ctx.fillText(nextprice,560,815);
-  ctx.fillText($(this).val(),810,815);
-});
-$(document).on('input','#inp-e85-3',function(){
-  //redraw image
-  const toprice = document.getElementById('inp-e85-1').value
-  const nextprice = document.getElementById('inp-e85-2').value
-  // //refill text
-  ctx.fillStyle = "#0071ba";
-  ctx.fillText(toprice,330,895);
-  if ( $(this).val().startsWith('+') ) {
-    ctx.fillStyle = "#ff0000";
-  } else if ( $(this).val().startsWith('-') ) {
-    ctx.fillStyle = "#039b54";
-  } else {
-    ctx.fillStyle = "#0071ba";
-  }
-  // ctx.fillText(toprice,330,895);
-  ctx.fillText(nextprice,560,895);
-  ctx.fillText($(this).val(),810,895);
-});
+
+function intToFloat(num, decPlaces) { return num.toFixed(decPlaces); }
+
+document.getElementById("check-change").addEventListener('change', changeimg);
+function changeimg(){
+    //redraw image
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.drawImage($('img').get(0), 0, 0);
+    // //refill text
+
+    // PB7
+    const PB7 = ()=>{
+      const toprice = document.getElementById('inp-pb7-1').value
+      const nextprice = document.getElementById('inp-pb7-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,250);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,255);
+      ctx.fillText(diffStr(),810,255);
+      // console.log(diffStr()); // For Debug
+    }
+    // // B7
+    const B7 = ()=>{
+      const toprice = document.getElementById('inp-b7-1').value
+      const nextprice = document.getElementById('inp-b7-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,330);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,335);
+      ctx.fillText(diffStr(),810,335);
+      // console.log(diffStr()); // For Debug
+    }
+    // // Diesel
+    const D = ()=>{
+      const toprice = document.getElementById('inp-d-1').value
+      const nextprice = document.getElementById('inp-d-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,410);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,415);
+      ctx.fillText(diffStr(),810,415);
+      // console.log(diffStr()); // For Debug
+    }
+    // // B20
+    const B20 = ()=>{
+      const toprice = document.getElementById('inp-b20-1').value
+      const nextprice = document.getElementById('inp-b20-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,490);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,495);
+      ctx.fillText(diffStr(),810,495);
+      // console.log(diffStr()); // For Debug
+    }
+    // // เบนซิน
+    const BEN = ()=>{
+      const toprice = document.getElementById('inp-ben-1').value
+      const nextprice = document.getElementById('inp-ben-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,570);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,575);
+      ctx.fillText(diffStr(),810,575);
+      // console.log(diffStr()); // For Debug
+    }
+    // // 95
+    const G95 = ()=>{
+      const toprice = document.getElementById('inp-95-1').value
+      const nextprice = document.getElementById('inp-95-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,650);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,655);
+      ctx.fillText(diffStr(),810,655);
+      // console.log(diffStr()); // For Debug
+    }
+    // // 91
+    const G91 = ()=>{
+      const toprice = document.getElementById('inp-91-1').value
+      const nextprice = document.getElementById('inp-91-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,730);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,735);
+      ctx.fillText(diffStr(),810,735);
+      // console.log(diffStr()); // For Debug
+    }
+    // // E20
+    const E20 = ()=>{
+      const toprice = document.getElementById('inp-e20-1').value
+      const nextprice = document.getElementById('inp-e20-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,810);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,815);
+      ctx.fillText(diffStr(),810,815);
+      // console.log(diffStr()); // For Debug
+    }
+    // // E85
+    const E85 = ()=>{
+      const toprice = document.getElementById('inp-e85-1').value
+      const nextprice = document.getElementById('inp-e85-2').value
+      const diff = Number(toprice)-Number(nextprice)
+      const diffStr = () => {
+        if ( diff >= 0){
+          return String('-'+intToFloat(diff, 2))
+        } else if ( diff < 0) {
+          const diffSlice = String(diff).slice(1)
+          return String('+'+intToFloat(Number(diffSlice), 2))
+        }
+      }
+      // //refill text
+      ctx.fillStyle = "#0071ba";
+      // ctx.fillText(toprice,330,255); // For Debug
+      if ( diffStr().startsWith('+') ) {
+        ctx.fillStyle = "#ff0000";
+      } else if ( diffStr().startsWith('-') ) {
+        ctx.fillStyle = "#039b54";
+      } else {
+        ctx.fillStyle = "#0071ba";
+      }
+      ctx.font = "28pt Prompt";
+      ctx.fillText(intToFloat(Number(toprice), 2),340,890);
+      ctx.font = "36pt Prompt";
+      ctx.fillText(intToFloat(Number(nextprice), 2),560,895);
+      ctx.fillText(diffStr(),810,895);
+      // console.log(diffStr()); // For Debug
+    }
+    const Label = ()=>{
+      const lebelValue = document.getElementById('inp-label').value
+      // //refill text
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "15pt Prompt";
+      ctx.fillText('มีผลบังคับใช้ วันที่ ' + lebelValue + 'หลังเวลา 05:00 น. เป็นต้นไป', 290, 927);
+    }
+    PB7()
+    B7()
+    D()
+    B20()
+    BEN()
+    G95()
+    G91()
+    E20()
+    E85()
+    Label()
+}
 
 
 
